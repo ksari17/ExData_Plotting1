@@ -12,5 +12,5 @@ data$DateTime <- strptime(paste(data$Date,data$Time),"%d/%m/%Y %H:%M:%S")
 
 ## Generate Plot 1
 png("plot1.png", width = 480, height = 480)
-plot(data$DateTime, data$Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab=NA)
+hist(data$Global_active_power, xlab = "Global Active Power (kilowatts)", main = "Global Active Power", c = "red")
 dev.off()

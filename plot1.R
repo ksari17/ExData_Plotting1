@@ -11,6 +11,6 @@ data <- subset(data, subset = (Date >= "1/2/2007" & Date <= "2/2/2007"))
 
 ## Generate Plot 1
 png("plot1.png", width = 480, height = 480)
-hist(power_feb$Global_active_power, xlab = "Global Active Power (kilowatts)", main = "Global Active Power", c = "red")
+hist(data$Global_active_power, xlab = "Global Active Power (kilowatts)", main = "Global Active Power", c = "red")
 dev.off()
 
